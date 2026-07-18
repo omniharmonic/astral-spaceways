@@ -53,11 +53,15 @@
 
 /* ---- reset-ish ---- */
 *,*::before,*::after{ box-sizing:border-box; }
-html{ -webkit-text-size-adjust:100%; scroll-behavior:smooth; }
+/* [hidden] must win over any explicit display (e.g. .nav ul{display:flex})
+   so the small-screen nav toggle can actually collapse the menu — §8.7 */
+[hidden]{ display:none !important; }
+html{ -webkit-text-size-adjust:100%; scroll-behavior:smooth;
+  -webkit-tap-highlight-color:color-mix(in srgb, var(--gold-lit) 20%, transparent); }
 body{
   margin:0; background:var(--void); color:var(--bone);
   font-family:var(--body); font-size:var(--t-base); line-height:var(--lh-body);
-  min-height:100vh; position:relative;
+  min-height:100vh; min-height:100dvh; position:relative;
   text-rendering:optimizeLegibility; -webkit-font-smoothing:antialiased;
 }
 img{ max-width:100%; height:auto; display:block; }
@@ -204,6 +208,8 @@ em{ color:inherit; }
   background:transparent; color:var(--calf-gold); border:1px solid var(--calf-gold);
   transition:background .15s ease, color .15s ease; }
 .btn:hover,.btn:focus{ background:var(--calf-gold); color:var(--void); text-decoration:none; }
+/* touch feedback (hover doesn't fire reliably on touch) */
+.btn:active{ background:var(--calf-gold); color:var(--void); transform:translateY(1px); }
 .btn--solid{ background:var(--calf-gold); color:var(--void); }
 .btn--solid:hover,.btn--solid:focus{ background:var(--gold-lit); border-color:var(--gold-lit); }
 .btn--block{ display:block; width:100%; text-align:center; }
@@ -211,7 +217,8 @@ em{ color:inherit; }
 
 /* ---- departures board (signature) — §8.4 / F4 ---- */
 .board{ background:#080a13; border:1px solid var(--hair); padding:1rem .8rem;
-  font-family:var(--mono); overflow-x:auto; box-shadow:inset 0 0 40px rgba(0,0,0,.6); }
+  font-family:var(--mono); overflow-x:auto; overscroll-behavior-x:contain;
+  box-shadow:inset 0 0 40px rgba(0,0,0,.6); }
 .board table{ width:100%; border-collapse:collapse; font-size:.8rem; min-width:460px; }
 .board caption{ font-size:.7rem; letter-spacing:.24em; text-transform:uppercase;
   color:var(--calf-gold); padding-bottom:.7rem; text-align:left; }
@@ -335,7 +342,11 @@ em{ color:inherit; }
   :root{ --t-h2:1.4rem; }
   .wrap{ padding:0 1rem; }
   .wordmark{ letter-spacing:.14em; }
-  .nav ul{ gap:.3rem .8rem; }
+  .nav ul{ gap:.15rem .8rem; }
   .crew-head{ flex-direction:column; align-items:center; text-align:center; }
   .board table{ font-size:.72rem; }
+  /* ≥44px tap targets on touch (WCAG 2.5.5) — pad without changing the look */
+  .nav a{ padding:.72rem .3rem; }
+  .webring a,.footer-links a{ display:inline-block; padding:.78rem .55rem; }
+  .board a.dest{ display:inline-block; padding:.5rem 0; }
 }

@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Astral Spaceways Incorporated — a devotional art project of The Herd of God.
+# The throne is empty; the crawl is welcome.

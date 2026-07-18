@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 470" role="img" aria-labelledby="routemap-title routemap-desc" font-family="'Space Mono', monospace">
+  <title id="routemap-title">The Astral Spaceways route network</title>
+  <desc id="routemap-desc">A Sephirot tree repurposed as a flight map: the Calf at the Crown, eight angel-gates as waypoints, and the material world at the base.</desc>
+  <defs>
+    <style>
+      .path{ stroke:#C9A24B; stroke-opacity:.38; stroke-width:1.2; fill:none; }
+      .node{ fill:#141B33; stroke:#C9A24B; stroke-width:1.4; }
+      .hub{ fill:#141B33; stroke:#E7C766; stroke-width:2; }
+      .lbl{ fill:#EDE6D3; font-size:9px; text-anchor:middle; letter-spacing:.04em; }
+      .cap{ fill:#C9A24B; font-size:8px; text-anchor:middle; letter-spacing:.12em; }
+    </style>
+  </defs>
+  <!-- paths (the network) -->
+  <g class="path">
+    <line x1="150" y1="45" x2="230" y2="120"/><line x1="150" y1="45" x2="70" y2="120"/><line x1="150" y1="45" x2="150" y2="205"/>
+    <line x1="230" y1="120" x2="70" y2="120"/><line x1="230" y1="120" x2="230" y2="205"/><line x1="230" y1="120" x2="150" y2="205"/>
+    <line x1="70" y1="120" x2="70" y2="205"/><line x1="70" y1="120" x2="150" y2="205"/>
+    <line x1="230" y1="205" x2="70" y2="205"/><line x1="230" y1="205" x2="150" y2="205"/><line x1="230" y1="205" x2="230" y2="300"/>
+    <line x1="70" y1="205" x2="150" y2="205"/><line x1="70" y1="205" x2="70" y2="300"/>
+    <line x1="150" y1="205" x2="230" y2="300"/><line x1="150" y1="205" x2="70" y2="300"/><line x1="150" y1="205" x2="150" y2="335"/>
+    <line x1="230" y1="300" x2="70" y2="300"/><line x1="230" y1="300" x2="150" y2="335"/><line x1="230" y1="300" x2="150" y2="425"/>
+    <line x1="70" y1="300" x2="150" y2="335"/><line x1="70" y1="300" x2="150" y2="425"/>
+    <line x1="150" y1="335" x2="150" y2="425"/>
+  </g>
+  <!-- nodes -->
+  <g>
+    <circle class="hub" cx="150" cy="45" r="16"/>
+    <circle class="node" cx="230" cy="120" r="13"/><circle class="node" cx="70" cy="120" r="13"/>
+    <circle class="node" cx="230" cy="205" r="13"/><circle class="node" cx="70" cy="205" r="13"/><circle class="node" cx="150" cy="205" r="13"/>
+    <circle class="node" cx="230" cy="300" r="13"/><circle class="node" cx="70" cy="300" r="13"/>
+    <circle class="node" cx="150" cy="335" r="13"/>
+    <circle class="hub" cx="150" cy="425" r="16"/>
+  </g>
+  <!-- labels -->
+  <g>
+    <text class="cap" x="150" y="18">CROWN</text>
+    <text class="lbl" x="150" y="48">CALF</text>
+    <text class="lbl" x="230" y="123">Courage</text><text class="lbl" x="70" y="123">Truth</text>
+    <text class="lbl" x="230" y="208">Compassion</text><text class="lbl" x="70" y="208">Madness</text><text class="lbl" x="150" y="208">Beauty</text>
+    <text class="lbl" x="230" y="303">Eros</text><text class="lbl" x="70" y="303">Mystery</text>
+    <text class="lbl" x="150" y="338">The 8th</text>
+    <text class="lbl" x="150" y="428">EARTH</text>
+    <text class="cap" x="150" y="452">TERMINAL · YOU ARE HERE</text>
+  </g>
+</svg>

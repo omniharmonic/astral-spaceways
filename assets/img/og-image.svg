@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" font-family="Georgia, serif">
+  <defs>
+    <radialGradient id="sky" cx="50%" cy="8%" r="90%">
+      <stop offset="0%" stop-color="#3B2F6B" stop-opacity=".55"/>
+      <stop offset="55%" stop-color="#141B33" stop-opacity=".2"/>
+      <stop offset="100%" stop-color="#0B0E1A"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#0B0E1A"/>
+  <rect width="1200" height="630" fill="url(#sky)"/>
+  <!-- scattered stars -->
+  <g fill="#EDE6D3">
+    <circle cx="120" cy="90" r="1.6"/><circle cx="300" cy="160" r="1.2"/><circle cx="520" cy="70" r="1.4"/>
+    <circle cx="900" cy="120" r="1.6"/><circle cx="1080" cy="80" r="1.2"/><circle cx="1010" cy="230" r="1.4"/>
+    <circle cx="180" cy="300" r="1.2"/><circle cx="80" cy="470" r="1.4"/><circle cx="1120" cy="430" r="1.6"/>
+    <circle cx="680" cy="540" r="1.2"/><circle cx="420" cy="520" r="1.4"/><circle cx="960" cy="560" r="1.2"/>
+  </g>
+  <g fill="#E7C766">
+    <circle cx="240" cy="120" r="1.8"/><circle cx="760" cy="180" r="1.6"/><circle cx="1040" cy="330" r="1.8"/>
+    <circle cx="150" cy="200" r="1.4"/><circle cx="600" cy="110" r="1.4"/>
+  </g>
+  <!-- sigil -->
+  <g transform="translate(600,175) scale(1.05)" stroke="#C9A24B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <circle cx="0" cy="0" r="52" stroke-width="1.4"/>
+    <g fill="#C9A24B" stroke="none">
+      <circle cx="0" cy="-52" r="3"/><circle cx="37" cy="-37" r="3"/><circle cx="52" cy="0" r="3"/><circle cx="37" cy="37" r="3"/>
+      <circle cx="0" cy="52" r="3"/><circle cx="-37" cy="37" r="3"/><circle cx="-52" cy="0" r="3"/><circle cx="-37" cy="-37" r="3"/>
+    </g>
+    <path d="M-25 -12 C -33 -24, -28 -34, -20 -31 C -24 -24, -19 -16, -12 -13"/>
+    <path d="M25 -12 C 33 -24, 28 -34, 20 -31 C 24 -24, 19 -16, 12 -13"/>
+    <path d="M-18 -8 C -27 -8, -32 -3, -30 4"/>
+    <path d="M18 -8 C 27 -8, 32 -3, 30 4"/>
+    <path d="M-15 -10 C -16 8, -10 24, 0 26 C 10 24, 16 8, 15 -10"/>
+    <path d="M-8 16 C -3 21, 3 21, 8 16"/>
+    <circle cx="-8" cy="2" r="2.4" fill="#E7C766" stroke="none"/><circle cx="8" cy="2" r="2.4" fill="#E7C766" stroke="none"/>
+  </g>
+  <!-- wordmark -->
+  <text x="600" y="330" text-anchor="middle" fill="#C9A24B" font-size="52" letter-spacing="10" style="text-transform:uppercase">ASTRAL SPACEWAYS</text>
+  <text x="600" y="378" text-anchor="middle" fill="#C9A24B" font-size="30" letter-spacing="16">INCORPORATED</text>
+  <line x1="360" y1="410" x2="840" y2="410" stroke="#C9A24B" stroke-opacity=".4" stroke-width="1"/>
+  <text x="600" y="460" text-anchor="middle" fill="#EDE6D3" font-size="34" font-style="italic">If you find Earth boring!</text>
+  <text x="600" y="520" text-anchor="middle" fill="#EDE6D3" fill-opacity=".8" font-size="20" font-family="'Space Mono', monospace">Scheduled departures beyond the veil since the Age of Taurus</text>
+  <text x="600" y="590" text-anchor="middle" fill="#C9A24B" fill-opacity=".7" font-size="15" letter-spacing="4" font-family="'Space Mono', monospace">A DEVOTIONAL ENTERPRISE OF THE HERD OF GOD</text>
+</svg>

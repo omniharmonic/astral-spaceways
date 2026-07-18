@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reserve / Sign the Guestbook — Astral Spaceways Incorporated</title>
+  <meta name="description" content="Leave your coordinates and the Oracle's crew will make contact. Every message reaches a real human being at the production.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Reserve / Sign the Guestbook — Astral Spaceways Incorporated">
+  <meta property="og:description" content="Leave your coordinates and the Oracle's crew will make contact.">
+  <meta property="og:image" content="assets/img/og-image.png">
+</head>
+<body>
+  <div class="starfield" aria-hidden="true"></div>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="masthead">
+    <div class="wrap">
+      <div class="sigil" aria-hidden="true"><img src="assets/img/calf-sigil.svg" alt=""></div>
+      <p class="wordmark"><a href="index.html">Astral Spaceways Incorporated</a></p>
+      <p class="tagline">If you find Earth boring!</p>
+      <nav class="nav" aria-label="Primary">
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="departures.html">Departures</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="oracle.html">The Oracle</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="inquiries.html" aria-current="page">Inquiries</a></li>
+        </ul>
+      </nav>
+      <hr class="hairline hairline--wide">
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="wrap">
+      <p class="eyebrow">Reserve / Sign the Guestbook</p>
+      <h1>Leave your coordinates.</h1>
+      <section class="measure">
+        <p class="lede">Leave your coordinates and the Oracle’s crew will make contact. Tell us where you’d like to go, or simply that you’re curious. Every message reaches a real human being at the production.</p>
+      </section>
+
+      <div id="form-status" class="form-status" aria-live="polite"></div>
+
+      <!-- Inquiry form (§10.9). Posts to Web3Forms → [PRODUCTION_EMAIL].
+           Activates once a real access_key is pasted below (see README).
+           Works with JS off (Web3Forms redirects to thanks.html). -->
+      <form id="inquiry-form" class="form measure" action="https://api.web3forms.com/submit" method="POST">
+        <!-- Web3Forms config -->
+        <input type="hidden" name="access_key" value="REPLACE_WITH_WEB3FORMS_ACCESS_KEY">
+        <input type="hidden" name="subject" value="Astral Spaceways — a soul has left coordinates">
+        <input type="hidden" name="from_name" value="Astral Spaceways Booking Line">
+        <input type="hidden" name="redirect" value="thanks.html">
+
+        <div class="field">
+          <label for="f-name">Name</label>
+          <span class="hint">the name you travel under</span>
+          <input type="text" id="f-name" name="name" required autocomplete="name">
+        </div>
+
+        <div class="field">
+          <label for="f-email">Email</label>
+          <span class="hint">an address that reaches you in this life</span>
+          <input type="email" id="f-email" name="email" required autocomplete="email">
+        </div>
+
+        <div class="field">
+          <label for="f-subject">Subject / purpose</label>
+          <span class="hint">tell the crew which desk to route you to</span>
+          <select id="f-subject" name="purpose">
+            <option value="Book a flight">Book a flight</option>
+            <option value="Press">Press</option>
+            <option value="Casting &amp; collaboration">Casting &amp; collaboration</option>
+            <option value="Is this real?">Is this real?</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="f-message">Message</label>
+          <span class="hint">where would you like to go, and why now?</span>
+          <textarea id="f-message" name="message" required></textarea>
+        </div>
+
+        <!-- honeypot (anti-spam, F3) -->
+        <label class="hp" aria-hidden="true">
+          Leave this field empty
+          <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off">
+        </label>
+
+        <p><input type="submit" class="btn btn--solid" value="Transmit"></p>
+        <p class="form-note">
+          Prefer to write directly? <a id="mailto-link" href="mailto:synergy@benjaminlife.one?subject=Astral%20Spaceways%20Inquiry">Open a transmission by mail ✦</a><br>
+          No card details, no payment — this page only carries your message. See <a href="safety.html">Safety &amp; Conditions</a>.
+        </p>
+      </form>
+
+      <!-- Guestbook flourish (static, period flavor) — §10.9 -->
+      <div class="measure">
+        <p class="eyebrow" style="margin-top:2rem">Recently signed the guestbook</p>
+        <ul class="guestbook" style="list-style:none;padding:0">
+          <li>✶ <strong>D.</strong> — departed for a past lifetime, returned changed about cattle</li>
+          <li>✶ <strong>R.</strong> — sideways Earth, one-way in spirit</li>
+          <li>✶ <strong>The one who will not give a name</strong> — Gate VIII, as instructed</li>
+          <li>✶ <strong>A.</strong> — asked the Oracle a question and paid to understand the answer</li>
+          <li>✶ <strong>Anonymous</strong> — reunited with a grandmother, three lifetimes back (a goat)</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="counter">You are soul № 001,242 to awaken.</p>
+      <p class="webring">‹ <a href="membership.html">prev</a> · <a href="about.html">ring</a> · <a href="index.html">next</a> ›<br><span class="mono" style="opacity:.7">The Astral Web Ring</span></p>
+      <p class="badge3i">Best viewed with an open third eye</p>
+      <p class="footer-links">
+        <a href="ascent.html">The Ascent</a> ·
+        <a href="safety.html">Safety &amp; Conditions</a> ·
+        <a href="membership.html">Membership</a> ·
+        <a href="inquiries.html">Inquiries</a>
+      </p>
+      <p class="mono">Est. MMXXII · Last updated XVIII · VII · MMXXVI</p>
+      <p class="seam">Astral Spaceways Incorporated is a work of theatrical fiction — the in-world business of the immersive production <em>The Herd of God</em>. Nothing here is a real service or a real transaction. To reach the humans who made it, use the <a href="inquiries.html">Inquiries</a> page.</p>
+      <p class="attribution">A work of <a href="https://twitter.com/omniharmonic" rel="noopener">Benjamin Life (@omniharmonic)</a> for <em>The Herd of God</em>.</p>
+    </div>
+  </footer>
+
+  <script>
+    /* Preselect the purpose from ?subject= (e.g. membership → "Is this real?"). No-JS safe. */
+    (function () {
+      try {
+        var p = new URLSearchParams(location.search).get('subject');
+        if (!p) return;
+        var map = { 'is-this-real': 'Is this real?', 'press': 'Press', 'casting': 'Casting & collaboration', 'book': 'Book a flight' };
+        var val = map[p]; if (!val) return;
+        var sel = document.getElementById('f-subject');
+        for (var i = 0; i < sel.options.length; i++) { if (sel.options[i].value === val) { sel.selectedIndex = i; break; } }
+      } catch (e) {}
+    })();
+  </script>
+  <script src="assets/js/starfield.js" defer></script>
+  <script src="assets/js/nav.js" defer></script>
+  <script src="assets/js/form.js" defer></script>
+</body>
+</html>
